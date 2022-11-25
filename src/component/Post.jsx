@@ -172,8 +172,7 @@ const DeleteHandlar = async (id) => {
                 <button onClick={(e) => getPostId(row.id)}>Edit</button>
               </StyledTableCell>
               <StyledTableCell align="right" >
-
-                <button onClick={(e) => DeleteHandlar(row.id)}>Delete</button>
+                  <button onClick={(e) => DeleteHandlar(row.id)}>Delete</button>
               </StyledTableCell>
             </StyledTableRow>
           ))}
