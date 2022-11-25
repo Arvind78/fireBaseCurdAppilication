@@ -10,6 +10,7 @@ const Nevigation = () => {
  
     const LogoutHandlar =()=>{
       localStorage.removeItem("curdLogin")
+      localStorage.removeItem("username")
   
    Navigate("/")
    setCount(count+1)

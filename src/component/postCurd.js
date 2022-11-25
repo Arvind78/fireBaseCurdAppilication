@@ -24,7 +24,7 @@ class postCurdOpretion{
   
   getPost =(id)=>{
     const PostDoc = doc(Db,"post",id)
-    return getDocs(PostDoc)
+    return getDoc(PostDoc)
   }
 
 }

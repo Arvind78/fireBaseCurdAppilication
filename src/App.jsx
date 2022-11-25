@@ -7,20 +7,22 @@ import { Routes, Route, useNavigate } from "react-router-dom"
 import Nevigation from './component/Nevigation'
 function App() {
   const Token = localStorage.getItem("curdLogin")
-const Navigate = useNavigate();
-const [profile,setProfile]=useState('')
+  const Navigate = useNavigate();
+
   //after logining re-render commponent
   const Logged = (displayName) => {
     Navigate("/")
     console.log(displayName)
-    setProfile(displayName)
+    localStorage.setItem('username', displayName)
+
   }
+
   return (
     <div className="App">
       <Nevigation />
       <Routes>
         <Route path='/' element={(Token) ? <Home /> : <GoogleAuth Logged={Logged} />} />
-        <Route path='/post' element={(Token) ? <Post UserName={profile} /> : <GoogleAuth Logged={Logged}  />} />
+        <Route path='/post' element={(Token) ? < Post /> : <GoogleAuth Logged={Logged} />} />
       </Routes>
     </div>
   )
