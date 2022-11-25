@@ -19,5 +19,5 @@ const app = initializeApp(firebaseConfig);
 export const signInWithGoogle=(logged)=>{
   signInWithPopup(Auth,Provider)
   .then((res)=>{console.log(res),localStorage.setItem("curdLogin",res.user.accessToken),logged()})
-  .catch((err)=>console.log(err))
+  .catch((err)=>console.log())
 }
