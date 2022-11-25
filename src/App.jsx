@@ -12,6 +12,7 @@ const [profile,setProfile]=useState('')
   //after logining re-render commponent
   const Logged = (displayName) => {
     Navigate("/")
+    console.log(displayName)
     setProfile(displayName)
   }
   return (
