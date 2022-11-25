@@ -4,10 +4,10 @@ import postCurd from "./postCurd"
  
 
 
-const Post = ({UserName}) => {
+const Post = () => {
   const[title,setTitle]=useState("")
   const[ body,setbody]=useState("")
-  const[userName,setuserName]=useState(UserName)
+  const[userName,setuserName]=useState("")
 // const Logged = () => {
 //     Navigate("/post")
 // uid
@@ -15,7 +15,7 @@ const Post = ({UserName}) => {
 
 const postHandlar=async(e)=>{
   e.preventDefault();
-  if(title==="" || body==="" ||userName=="" ){
+  if(title==="" || body==="" ||userName==""  ){
     alert("All field is required")
   }
   else{
