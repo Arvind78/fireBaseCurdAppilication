@@ -1,0 +1,38 @@
+.postContenar{
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ gap: 60px;
+ align-items: center;
+}
+.formControllar{
+    height: 43vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+    margin-top:30px;
+    border-radius: 5px;
+    
+}
+
+.formControllar form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0px 50px;
+} 
+
+
+.formControllar form input{
+    padding: 10px;
+    margin:6px 0px;
+}
+
+.formControllar form button{
+    padding: 10px;
+}
