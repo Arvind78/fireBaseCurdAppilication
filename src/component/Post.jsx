@@ -88,7 +88,7 @@ if(id==undefined || id=="") {
           <input type="text" onChange={(e) => setTitle(e.target.value)} placeholder="Post title" value={title} />
           <textarea rows="4" cols="50" onChange={(e) => setbody(e.target.value)} placeholder="Write post" value={body} ></textarea>
           <input type="text" value={userName} />
-          <button type='submit'>Post</button>
+          <button type='submit'>Post/Update</button>
         </form>
       </div>
 
